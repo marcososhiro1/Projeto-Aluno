@@ -578,10 +578,6 @@ video {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
@@ -616,6 +612,10 @@ video {
 
 .mt-72 {
   margin-top: 18rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -658,10 +658,6 @@ video {
   height: 100svh;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -676,10 +672,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-28 {
-  width: 7rem;
 }
 
 .cursor-pointer {
