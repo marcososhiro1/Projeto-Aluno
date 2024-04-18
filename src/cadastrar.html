@@ -17,7 +17,7 @@
 
 
 </head>
-<body class="h-svh">
+<body class="bg-gray-200">
      <div class="grid grid-cols-7">
 
         <!--Começando cabeçalho-->
@@ -79,31 +79,17 @@
 
         <!--Começando a barra lateral-->
 
-        <nav class="text-white bg-secondary">
-            <div >
+        <nav  class="col-span-1 text-white bg-secondary h-svh">
+            <div>
                 <div >
-                        <ul class="h-svh flex flex-col " style="text-align: center;">
-                            <div class=" w-full text-xl flex flex-col gap-5 ">
-                                 <button><li class="hover:bg-third cursor-pointer p-3 "><a href="../src/index.html" >Dashboard</a></li></button> 
-                                  <button><li class="hover:bg-third cursor-pointer p-3"><a href="../src/gestao.html">Gestão</a></li></button>
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="#">Agenda</a></li>
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="#" >Turmas</a></li>
-
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="#" >Relatórios</a></li>
-
-                                 <li  class=" mr-7" style="margin-top: 200px;">
-                                
-                                    <button id="show-or-hide"> <a href="# ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        </svg> 
-                                    <label for="#">Administrator</label></a></button></li> 
-
-                                <div id="botao_logout" style="margin-right: 130px; display:none;">
-                                  <button><a href="#"><i class="bi bi-box-arrow-left" ></i></a></button> 
-                              </div>
-                            </div>
-                           
+                    <table>
+                        <ul class="h-svh flex flex-col justify-around items-center text-2xl">
+                            <li class="hover:bg-third" style="text-align: center; width: 100%; padding: 15px;"><a href="../src/index.html">Dashboard</a></li>
+                            <li class="hover:bg-third" style="text-align: center; width: 100%; padding: 15px;"><a href="../src/gestao.html">Gestão</a></li>
+                            <li class="hover:bg-third"style="text-align: center;width: 100%; padding: 15px;"><a href="">Agenda</a></li>
+                            <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="">Turmas</a></li>
+                            <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="">Relatórios</a></li>
+                            <li ><a href="#"><i class="bi bi-person-circle"></i><span>Administrator</span></a></li>
                         </ul>
                     
                     </table>
@@ -114,12 +100,13 @@
 
         <!--Começando a tela principal-->
 
-        <main id="tela-cadastro" class="bg-gray-200 col-span-6 flex justify-center items-center " style="height: 100%;  flex-wrap: wrap; ">
+        
+        <main id="tela-cadastro" class="h-svh bg-gray-200 col-span-6 flex justify-center items-center "style="height: 100%; ">
 
-            <div class="telaprincipal bg-white rounded-2xl " style="width: 94%; height: auto; margin: 5%;">
-                <div class="cabecalho bg-four text-xl b" style="border-radius: 15px 15px 0px 0px;" >
+            <div class="telaprincipal bg-white rounded-2xl " style=" margin: 3%;">
+                <div class="cabecalho bg-four text-xl" style="border-radius: 15px 15px 0px 0px;" >
 
-                    <h3 class="text-center font-bold text-3xl p-5">Cadastro</h3>
+                    <h3 class="text-center font-bold text-3xl p-3 text-white">Cadastro</h3>
 
                      <!--div dos inputs do cabeçalho-->
                     
@@ -127,18 +114,18 @@
                         <fieldset>
                             <div class="flex gap-3 items-center justify-between ml-6 mr-6">
                             <button>
-                                    <div>
+                                    <div >
                                         <i class="bi bi-person-circle text-white" style="font-size: 3rem;"></i>
-                                        <input type="text" name="nomeDoAluno" placeholder="Nome do Aluno" style="width: 32rem; margin-bottom: 2rem;">
+                                        <input type="text" name="nomeDoAluno" placeholder="Nome do Aluno" style="width: 32rem; margin-bottom: 2rem;border-radius: 5px;">
                                     </div>
                             </button>
                         <div>
-                            <input type="date">
+                            <input type="date" style="border-radius: 5px;">
                         </div>
 
-                        <div>
+                        <div >
                             <label for="identificador" name="identificador" >ID:</label>
-                            <input type="text" name="identificador" style="width: 6rem; text-align: end;">
+                            <input type="text" name="identificador " disabled style="width: 6rem; text-align: end; border-radius: 5px;">
                         </div>
                         
                         
@@ -203,10 +190,6 @@
     
                                     <label for="CEP">CEP:
                                     <input type="text"></label>
-                                    
-                                    <br>
-                                    <br>
-                                    
 
                                     <label for="endereco_email">Endereço de E-mail:
                                     <input type="email" style="width: 50rem;"></label>
@@ -217,17 +200,27 @@
                                     <input type="email" style="width: 50rem;"></label>
                                 </div>
 
-                                <br>
+                               <br>
+                                <div class="flex">
+                                    <div id="btn_selecionarTurma"> 
+                                        <label>
+                                            <select name="turma" id="turma">
+                                                <option value="selecione" selected >Selecione</option>
+                                            </select>
+                                         <span class="text-2xl">Turma</span></label>
+                                    </div>
+    
+                                    <div id="btn_selecionarPeriodo"> 
+                                        <label>
+                                            <select name="periodo" id="periodo">
+                                                <option value="selecione" selected >Selecione</option>
+                                            </select>
+                                         <span class="text-2xl">Periodo</span></label>
+                                    </div>
+                                </div>
                                 
-                                <div id="btn_selecionarTurma"> 
-                                    <label>
-                                        <select name="turma" id="turma">
-                                            <option value="selecione" selected >Selecione</option>
-                                        </select>
-                                     <span class="text-2xl">Turma</span></label>
-                                </div>
                                 <div id="btn_cadastro">
-                                    <div class="flex justify-end gap-28 items-end  mr-20">
+                                    <div class="flex justify-end gap-12 items-end  mr-20">
                                         <button type="#" value="limpar" class="bg-vermelho1 hover:bg-vermelho2">Limpar</button>
                                         <button type="submit" value="Cadastrar" class="bg-four hover:bg-four2">Cadastrar</button>
                                     </div>
@@ -240,6 +233,7 @@
                 </div>
             </div>
         </main>
+        
         
  </div>  
 

@@ -15,7 +15,7 @@
 
 
 </head>
-<body>
+<body class="bg-gray-200">
      <div class="grid grid-cols-7">
 
         <!--Começando cabeçalho-->
@@ -77,36 +77,23 @@
 
         <!--Começando a barra lateral-->
 
-        <nav>
-            <div class="col-span-6 text-white bg-secondary h-svh " style="height: 100%;">
-                <div >
-                        <ul class="h-svh flex flex-col " style="text-align: center;">
-                            <div class=" w-full text-xl flex flex-col gap-5 ">
-                                  <li class="hover:bg-third cursor-pointer p-3 "><a href="../src/index.html" >Dashboard</a></li>
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="../src/gestao.html" >Gestão</a></li>
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="../src/agenda.html">Agenda</a></li>
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="../src/turmas.html" >Turmas</a></li>
-                                  <li class="hover:bg-third cursor-pointer p-3"><a href="../src/relarorio.html" >Relatórios</a></li>
-                              
-                               <li  class=" mr-7" style="margin-top: 200px;">
-                                
-                                <button id="show-or-hide"> <a href="# ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    </svg> 
-                                   <label for="#">Administrator</label></a></button></li> 
-
-                                <div id="botao_logout" style="margin-right: 130px; display:none;">
-                                  <button><a href="#"><i class="bi bi-box-arrow-left" ></i></a></button> 
-                              </div>
-                            </div>
-                           
-                        </ul>
-                    
-                    </table>
-                </div>
-            </div>
-        </nav>
+        <nav  class="col-span-1 text-white bg-secondary h-svh">
+          <div>
+              <div >
+                  <table>
+                      <ul class="h-svh flex flex-col justify-around items-center text-2xl" >
+                          <li class="hover:bg-third" style="text-align: center; width: 100%; padding: 15px;"><a href="../src/index.html">Dashboard</a></li>
+                          <li class="hover:bg-third" style="text-align: center; width: 100%; padding: 15px;"><a href="../src/gestao.html">Gestão</a></li>
+                          <li class="hover:bg-third"style="text-align: center;width: 100%; padding: 15px;"><a href="">Agenda</a></li>
+                          <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="">Turmas</a></li>
+                          <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="">Relatórios</a></li>
+                          <li ><a href="#"><i class="bi bi-person-circle"></i><span>Administrator</span></a></li>
+                      </ul>
+                  
+                  </table>
+              </div>
+          </div>
+      </nav>
         <!--fim da barra lateral-->
 
         <!--Começando a tela principal-->

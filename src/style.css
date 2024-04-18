@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*input e button tela de cadastro */
+
 #tela-cadastro div input , select{
     outline: none;
     border-radius: 5px;
@@ -13,14 +13,16 @@
 }
 #btn_cadastro div button{
     color: #fff;
-    padding: 15px;
+    padding: 5px;
     border-radius: 10px;
     width: 8rem
 }
 
+
 #dados div input{
     margin:10px 8px 10px 8px ;
-    
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 #dados div label{
     margin: 1.2rem;
