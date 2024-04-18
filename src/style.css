@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*input e button tela de cadastro */
+#tela-cadastro div input , select{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #e9e7e7 ;
+    background-color: white;
+}
+#btn_cadastro div button{
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 8rem
+}
+
+#dados div input{
+    margin:10px 8px 10px 8px ;
+    
+}
+#dados div label{
+    margin: 1.2rem;
+}
