@@ -15,14 +15,17 @@
     color: #fff;
     padding: 5px;
     border-radius: 10px;
-    width: 8rem
+    width: 6rem;
+    
 }
 
 
-#dados div input{
+form input{
     margin:10px 8px 10px 8px ;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    
 }
 #dados div label{
     margin: 1.2rem;

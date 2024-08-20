@@ -86,9 +86,9 @@
                         <ul class="h-svh flex flex-col justify-around items-center text-2xl">
                             <li class="hover:bg-third" style="text-align: center; width: 100%; padding: 15px;"><a href="../src/index.html">Dashboard</a></li>
                             <li class="hover:bg-third" style="text-align: center; width: 100%; padding: 15px;"><a href="../src/gestao.html">Gestão</a></li>
-                            <li class="hover:bg-third"style="text-align: center;width: 100%; padding: 15px;"><a href="">Agenda</a></li>
-                            <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="">Turmas</a></li>
-                            <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="">Relatórios</a></li>
+                            <li class="hover:bg-third"style="text-align: center;width: 100%; padding: 15px;"><a href="../src/agenda.html">Agenda</a></li>
+                            <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="../src/turmas.html">Turmas</a></li>
+                            <li class="hover:bg-third"style="text-align: center; width: 100%; padding: 15px;"><a href="../src/relatorios.html">Relatórios</a></li>
                             <li ><a href="#"><i class="bi bi-person-circle"></i><span>Administrator</span></a></li>
                         </ul>
                     
@@ -101,141 +101,51 @@
         <!--Começando a tela principal-->
 
         
-        <main id="tela-cadastro" class="h-svh bg-gray-200 col-span-6 flex justify-center items-center "style="height: 100%; ">
+        <main id="cadastro" class="w-10 col-span-6" style="border: 1px solid red;">
+            <div id="window-float" class="w-10 h-full bg-slate-950" style="border: 1px solid red;">
+                <fieldset>
+                    <h1>Cadastro</h1>
+                  <form id="cad-user">
 
-            <div class="telaprincipal bg-white rounded-2xl " style=" margin: 3%;">
-                <div class="cabecalho bg-four text-xl" style="border-radius: 15px 15px 0px 0px;" >
-
-                    <h3 class="text-center font-bold text-3xl p-3 text-white">Cadastro</h3>
-
-                     <!--div dos inputs do cabeçalho-->
+                    <div class="text-lg">
+                        <label for="nome-user" id="nome-user">Nome-Completo</label>
+                    <input type="text" name="nome-user" id="nomeUser">
                     
-                     <form action="#">  
-                        <fieldset>
-                            <div class="flex gap-3 items-center justify-between ml-6 mr-6">
-                            <button>
-                                    <div >
-                                        <i class="bi bi-person-circle text-white" style="font-size: 3rem;"></i>
-                                        <input type="text" name="nomeDoAluno" placeholder="Nome do Aluno" style="width: 32rem; margin-bottom: 2rem;border-radius: 5px;">
-                                    </div>
-                            </button>
-                        <div>
-                            <input type="date" style="border-radius: 5px;">
-                        </div>
+                    <br><br>
 
-                        <div >
-                            <label for="identificador" name="identificador" >ID:</label>
-                            <input type="text" name="identificador " disabled style="width: 6rem; text-align: end; border-radius: 5px;">
-                        </div>
-                        
-                        
+                    <label for="userEmail" >Email:
+                      <input type="email" name="userEmail" id="userEmail">
+                    </label>
+
+                    <br><br>
+
+                    <label for="dataNascimento">Data-Nascimento: <input type="date" name="dataNascimento" id="dataNascimento"></label>
+
+                    <br><br>
+
+                    <label>Gênero:</label> <br>
+                    <input type="radio" name="sexo" id="cad-gen-M" value="M" class="genero"><label for="cad-gen-M">Masculino</label>
+
+                    <input type="radio" name="sexo" id="cad-gen-F"  value="F" class="genero"><label for="cad-gen-F">Femenino</label>
                     </div>
- 
-                </div>
 
-                <div id="dados" >
+                    <!-- Botão envio de formulario -->
+                    <div id="btn-enviarFormulario"><input type="submit" value="Cadastrar"></div>
 
-                            <div class="p-5 flex flex-col gap-2" style="height: 83%;">
-                                <div id="aluno">
-                                    <input type="radio" name="genero" value="M"/>Masculino
-                                    <input type="radio" name="genero" value="F"/> Feminino
-    
-                                    <label for="rg_Aluno">RG:
-                                    <input type="text"></label>
-    
-                                    <label for="CPF_Aluno">CPF:
-                                    <input type="text"></label>
-                                </div>
 
-                                
+                  </form>
+                  <hr>
 
-                                <div id="responsavel">
-                                    <label for="nome_mae">Nome da Mãe:
-                                    <input type="text"></label>
-                                    <label for="CPF_RG_mae">CPF/RG:
-                                    <input type="text"></label>
-                                    <label for="tel_mae">Tel:
-                                    <input type="text"></label>
-    
-                                    <br>
-    
-                                    <label for="nome_pai">Nome do Pai:
-                                    <input type="text"></label>
-                                    <label for="CPF_RG_pai">CPF/RG:
-                                    <input type="text"></label>
-                                    <label for="tel_pai">Tel:
-                                    <input type="text"></label>
-                                </div>
-
-                                
-
-                                <div id="logradouro">
-                                    <label for="endereco">Endereço:
-                                    <input type="text"></label>
-    
-                                    <label for="bairro">Bairro:
-                                    <input type="text"></label>
-    
-                                    <label for="numero_casa">N°:
-                                    <input type="text"></label>
-    
-                                    <label for="complemento">Complemento:
-                                    <input type="text"></label>
-    
-                                    <label for="cidade">Cidade:
-                                    <input type="text"></label>
-    
-                                    <label for="estado">Estado:
-                                    <input type="text"></label>
-    
-                                    <label for="CEP">CEP:
-                                    <input type="text"></label>
-
-                                    <label for="endereco_email">Endereço de E-mail:
-                                    <input type="email" style="width: 50rem;"></label>
-
-                                    <br>
-
-                                    <label for="endereco_email">Endereço de E-mail:
-                                    <input type="email" style="width: 50rem;"></label>
-                                </div>
-
-                               <br>
-                                <div class="flex">
-                                    <div id="btn_selecionarTurma"> 
-                                        <label>
-                                            <select name="turma" id="turma">
-                                                <option value="selecione" selected >Selecione</option>
-                                            </select>
-                                         <span class="text-2xl">Turma</span></label>
-                                    </div>
-    
-                                    <div id="btn_selecionarPeriodo"> 
-                                        <label>
-                                            <select name="periodo" id="periodo">
-                                                <option value="selecione" selected >Selecione</option>
-                                            </select>
-                                         <span class="text-2xl">Periodo</span></label>
-                                    </div>
-                                </div>
-                                
-                                <div id="btn_cadastro">
-                                    <div class="flex justify-end gap-12 items-end  mr-20">
-                                        <button type="#" value="limpar" class="bg-vermelho1 hover:bg-vermelho2">Limpar</button>
-                                        <button type="submit" value="Cadastrar" class="bg-four hover:bg-four2">Cadastrar</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </form>
-                    </fieldset>
-                </div>
+                  
+                    <span id="listaDeUsuarios"></span>
+                  
+                </fieldset>
             </div>
         </main>
         
-        
  </div>  
+
+ <script src="cad-aluno.js"></script>
 
 </body>
 
